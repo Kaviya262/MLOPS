@@ -1,4 +1,3 @@
-
 name: model_train  
 permissions: 
   id-token: write
@@ -14,7 +13,7 @@ jobs:
     steps:
       - uses: iterative/setup-cml@v2  
       - uses: actions/checkout@v4
-      - name: train_model
+      - name: train model
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}   
  
